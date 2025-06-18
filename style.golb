@@ -1,0 +1,69 @@
+# Welcome to my new blog
+
+I've been meaning to make a blog for quite a while, but its been very difficult
+for me to get started. There is nothing technically challenging about starting
+a blog, but I've struggled to come up with a design I like.
+
+## Motivation and frustrations
+
+I knew from the outset that I want to base my design around monospaced text.
+Monospace brings with it such nice properties that it's baffling to me how
+eager designers are to reject it in anything meant to be seen by
+non-programmers.
+
+I quite enjoy the rigid organization in terminal user interfaces, and there are
+sites and tools that bring the style of the terminal to the browser.
+<a href="https://adventofcode.com">Advent of Code</a> is a fun example, with
+many HTML elements reimagined in a terminal style.
+However, I want my own site to take greater advantage of HTML's strengths rather
+than try to merely imitate the terminal.
+
+## Rationale for the current design or: How I spent hours writing 444 bytes of CSS
+
+I started off with white text on a black background because it's comfortable,
+readable, and simple. I chose Courier New because I don't want to force anyone
+to download a font and it doesn't matter for this blog if non-ASCII
+characters look 亂七八糟.
+
+I then experimented with the finer details of the layout. My original goal
+was to guarantee that the text would display on a perfect grid on any system,
+but I realized that would require cluttering the HTML with a div wrapping each
+character to fit in a CSS grid.
+That approach would make sense for something like a browser based code editor,
+but since I am mostly concerned with whether people can easily and comfortably
+read my content, I decided to try and find simple, readable settings.
+My final choice of font-size: 20px; line-height: 1.2; is pretty similar to
+more traditional web design.
+
+Having read about the CSS grid, I chose to use it in moderation to add in
+line numbers while keeping everything aligned. Line numbers are not a super
+important feature, but giving each line number an id makes it very simple to link
+to a specific part of the article by adding that line number to the end of the URL
+(<a href="#9">Example</a>).
+THe line numbers also act well as a left margin, so I removed the CSS margins and padding.
+I took inspiration from text editors and made the line numbers gray to avoid distraction.
+
+To keep things truly monospaced, I naturally gave headings the same font size as paragraphs.
+The color choice was much more complicated and would need an article many times longer
+than this one to explain, but the short reason is that I like hotpink.
+
+## Looking forward
+
+There are many features I hope to add to this blog, and I hope that my design choices
+can inspire you to do some experimentation of your own.
+I would also really appreciate it if you, the reader, send me some inspiration in the
+form of feedback, whether you have design suggestions, topic suggestions, or even
+just a greeting to show you've read this. Your feedback is the only way I have of
+telling that anyone cares.
+
+I'd especially appreciate suggestions on how to improve the accessibility of this website.
+I don't have much experience designing specifically for accessibility, so my experimental
+approach might be inaccessible in ways I haven't anticipated.
+
+This article was edited down from its original length of over 1000 words, so I have no
+shortage of topics I'd like to write about in depth. I'm just not sure what people would
+be interested in reading about, and I'm not sure how much I should talk about silly subjects
+like the fact I doubled each style-rule in the CSS file to go from an ominous 444 bytes to
+an auspicious 888 bytes, or my reasoning behind adding the creature I call the faff serpent.
+It's still somewhat long, though, so thanks for reading.
+I hope you'll stick around and read more articles I write in the future.

@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	background: black;
+	color: white;
+	/* Avoid frustration with scrolling and avoid toolbar overlap */
+	padding-bottom: 30em;
+}
+
+td {
+	width: 1ch;
+	/* The height of a filled td seems to be greater than 1em */
+	height: 1em;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	display: inline;
+	border-collapse: collapse;
+	border-width: 0;
+	padding: 0 0.3em;
+}
+
+#tables-container {
+	display: flex;
+	justify-content: space-around;
+}
+
+#toolbar {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+	justify-content: center;
+	padding: 0.5em 1em;
+	z-index: 1000;
+	user-select: none;
+}
+
+#help-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	z-index: 2000;
+}
+
+#help-window {
+	width: 90%;
+	max-width: 90vw;
+	max-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	padding-top: 1em;
+	padding-left: 1em;
+	background-color: black;
+	font-family: system-ui, sans-serif;
+}
+
+#help-content {
+	overflow-y: auto;
+	flex-grow: 1;
+}
+
+#toolbar>button, #help-window button {
+	font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+	font-size: 1em;
+}
+
+.dle-board {
+	font-family: 'Nimbus Mono PS', 'Courier New', monospace;
+}
+
+.dle-green {
+	background: darkgreen;
+}
+
+.dle-yellow {
+	background: darkgoldenrod;
+}
+
+.dle-gray {
+	background: dimgray;
+}
